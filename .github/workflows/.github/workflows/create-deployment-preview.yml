@@ -1,3 +1,7 @@
+# Comapnies develop syncronously on Airflow. 
+# By doing it this way, everyone can develop locally in parallel or async, then push their local devs to a branch, test, before their work is then merged to the main branch. 
+# created an ephemoreal testing environemtn - on the creation of any new branches It will create that deployment and push. 
+# Each time 
 name: Astronomer CI - Create preview Deployment
 
 on:
@@ -17,4 +21,4 @@ jobs:
       uses: astronomer/deploy-action@v0.3
       with:
         action: create-deployment-preview
-        deployment-id: cli235ha969559lyxh3fdchwxr
+        deployment-id: cm9gb4e4d0zkc01metmb778a8
